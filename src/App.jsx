@@ -1,14 +1,15 @@
 
 import './App.css'
+import FooterComponent from './components/FooterComponent'
 import NavbarComponent from './components/NavbarComponent'
 
 function App() {
   return (
     <>
-      <NavbarComponent />
-      <div className="bg-blue-500 text-white p-4 m-4 rounded-lg">
-        <h1 className="text-2xl font-bold">Hello world</h1>
-        <p className="text-sm">This should be styled with Tailwind CSS</p>
+      <div className='h-screen flex flex-col justify-between'>
+        <NavbarComponent />
+        <h1></h1>
+        <FooterComponent />
       </div>
     </>
   )
