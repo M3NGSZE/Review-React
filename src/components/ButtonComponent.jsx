@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ButtonComponent() {
     return (
-        <button style={styles.button}>
+        <button style={{...styles.button, ...styles.img}}>
             Click Me
         </button>
     )
@@ -10,7 +10,6 @@ export default function ButtonComponent() {
 
 const styles = {
     button : {
-        backgroundColor: 'blue',
         fontSize: '2rem',
         color: 'white'
     },
