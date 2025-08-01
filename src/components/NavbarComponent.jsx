@@ -10,7 +10,7 @@ const NavbarComponent = () => {
                     <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite React</span>
                 </NavbarBrand>
 
-                <ButtonComponent title="Login" onClick={() => alert("login")}/>
+                {/* <ButtonComponent title="Login" onClick={() => alert("login")}/> */}
 
                 <NavbarToggle />
                 <NavbarCollapse>

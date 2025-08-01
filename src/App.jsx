@@ -3,14 +3,15 @@ import './App.css'
 import ButtonComponent from './components/ButtonComponent'
 import FooterComponent from './components/FooterComponent'
 import NavbarComponent from './components/NavbarComponent'
+import NewCardComponent from './components/NewCardComponent'
 import Feedback from './pages/Feedback'
 import ListProducts from './pages/ListProducts'
 
 function App() {
 
-  const handleClick = () => {
-    alert("Button clicked")
-  }
+  // const handleClick = () => {
+  //   alert("Button clicked")
+  // }
 
   return (
     <>
@@ -20,8 +21,9 @@ function App() {
           
           {/* <ListProducts/> */}
           {/* <Feedback/> */}
+          {/* <ButtonComponent title= "Add to Card" onClick={handleClick} className="p-4 bg-red-800 text-white"/> */}
 
-          <ButtonComponent title= "Add to Card" onClick={handleClick} className="p-4 bg-red-800 text-white"/>
+          <NewCardComponent/>
 
         </main>
         <FooterComponent />
