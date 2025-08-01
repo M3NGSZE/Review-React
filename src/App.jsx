@@ -7,6 +7,11 @@ import Feedback from './pages/Feedback'
 import ListProducts from './pages/ListProducts'
 
 function App() {
+
+  const handleClick = () => {
+    alert("Button clicked")
+  }
+
   return (
     <>
       <div className='h-screen flex flex-col justify-between'>
@@ -16,7 +21,8 @@ function App() {
           {/* <ListProducts/> */}
           {/* <Feedback/> */}
 
-          <ButtonComponent/>
+          <ButtonComponent title= "Add to Card" onClick={handleClick} className="p-4 bg-red-800 text-white"/>
+
         </main>
         <FooterComponent />
       </div>
