@@ -1,5 +1,6 @@
 
 import './App.css'
+import ButtonComponent from './components/ButtonComponent'
 import FooterComponent from './components/FooterComponent'
 import NavbarComponent from './components/NavbarComponent'
 import Feedback from './pages/Feedback'
@@ -11,8 +12,11 @@ function App() {
       <div className='h-screen flex flex-col justify-between'>
         <NavbarComponent />
         <main className='flex-1 bg-black text-white '>
-          <ListProducts/>
-          <Feedback/>
+          
+          {/* <ListProducts/> */}
+          {/* <Feedback/> */}
+
+          <ButtonComponent/>
         </main>
         <FooterComponent />
       </div>
